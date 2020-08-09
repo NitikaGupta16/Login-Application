@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/imageview_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <EditText
+        android:id="@+id/edittext_username"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="80dp"
+        android:hint="@string/username"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/user"/>
+
+    <EditText
+        android:id="@+id/edittext_email"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:drawableLeft="@drawable/mail"/>
+
+
+    <EditText
+        android:id="@+id/edittext_address"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:hint="@string/address"
+        android:drawableLeft="@drawable/address"/>
+
+
+    <EditText
+        android:id="@+id/edittext_password"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/lock"/>
+
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/register" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/already_registered" />
+
+        <TextView
+            android:id="@+id/textview_login"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:text="@string/login"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
